@@ -1,0 +1,2387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>David Web Studio | Professional Website Design</title>
+
+    <meta
+        name="description"
+        content="David Web Studio creates modern, responsive and professional websites for businesses, brands and individuals."
+    >
+
+    <meta
+        name="keywords"
+        content="David Web Studio, web design, website development, portfolio website, business website, responsive website"
+    >
+
+    <meta name="author" content="David Web Studio">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://yourdomain.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+
+    <meta
+        property="og:title"
+        content="David Web Studio | Professional Website Design"
+    >
+
+    <meta
+        property="og:description"
+        content="Modern and responsive websites for businesses, brands and individuals."
+    >
+
+    <meta property="og:url" content="https://yourdomain.com/">
+
+    <meta
+        property="og:site_name"
+        content="David Web Studio"
+    >
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#050816">
+
+
+    <!-- ==================================================
+         STRUCTURED DATA
+    ================================================== -->
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "David Web Studio",
+        "url": "https://yourdomain.com/",
+        "description": "Professional website design and development for businesses, brands and individuals.",
+        "email": "davidolocheodangla@gmail.com",
+        "telephone": "+2347071694637",
+        "priceRange": "$$"
+    }
+    </script>
+
+
+<style>
+
+/* ==================================================
+   DAVID WEB STUDIO
+   VERSION 3.3
+   SEO EDITION
+================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #050816;
+    color: white;
+    line-height: 1.6;
+    overflow-x: hidden;
+    transition: background 0.4s, color 0.4s;
+}
+
+body.light {
+    background: #f4f7fb;
+    color: #111827;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+}
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    filter: blur(170px);
+    opacity: .08;
+    z-index: -1;
+    pointer-events: none;
+}
+
+body::before {
+    background: #00bfff;
+    top: -180px;
+    left: -150px;
+}
+
+body::after {
+    background: #7c3aed;
+    right: -150px;
+    bottom: -180px;
+}
+
+
+/* ==================================================
+   NAVIGATION
+================================================== */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 18px 7%;
+
+    background: rgba(5, 8, 22, .92);
+
+    backdrop-filter: blur(15px);
+
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #00bfff;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    list-style: none;
+}
+
+nav ul a {
+    color: #e5e7eb;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    transition: .3s;
+}
+
+nav ul a:hover {
+    color: #00bfff;
+}
+
+nav ul a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 0;
+    height: 2px;
+    background: #00bfff;
+    transition: .3s;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+
+.nav-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.theme-button,
+.menu-button {
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 10px;
+    background: #111827;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.theme-button:hover,
+.menu-button:hover {
+    background: #00bfff;
+    color: #00111c;
+}
+
+.menu-button {
+    display: none;
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(0,191,255,.14),
+            transparent 45%
+        );
+}
+
+.hero-content {
+    max-width: 950px;
+    animation: heroAppear 1s ease;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 8px 17px;
+    margin-bottom: 25px;
+
+    border: 1px solid rgba(0,191,255,.4);
+    border-radius: 30px;
+
+    color: #00bfff;
+    background: rgba(0,191,255,.06);
+
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: clamp(43px, 7vw, 78px);
+    line-height: 1.08;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #00bfff;
+}
+
+.hero p {
+    max-width: 760px;
+    margin: 0 auto 35px;
+
+    color: #cbd5e1;
+    font-size: 19px;
+}
+
+body.light .hero p {
+    color: #475569;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* ==================================================
+   BUTTONS
+================================================== */
+
+.button {
+    display: inline-block;
+
+    padding: 14px 27px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: linear-gradient(
+        135deg,
+        #00bfff,
+        #008cff
+    );
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .35s;
+
+    box-shadow:
+        0 8px 25px rgba(0,191,255,.22);
+}
+
+.button:hover {
+    transform: translateY(-5px) scale(1.03);
+
+    box-shadow:
+        0 15px 35px rgba(0,191,255,.35);
+}
+
+.button-outline {
+    background: transparent;
+    border: 1px solid #00bfff;
+    box-shadow: none;
+}
+
+.button-outline:hover {
+    background: #00bfff;
+    color: #00111c;
+}
+
+
+/* ==================================================
+   SECTIONS
+================================================== */
+
+section {
+    padding: 100px 7%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 55px;
+}
+
+.section-title span {
+    color: #00bfff;
+}
+
+.section-subtitle {
+    text-align: center;
+    max-width: 700px;
+    margin: -30px auto 45px;
+    color: #94a3b8;
+}
+
+
+/* ==================================================
+   REVEAL
+================================================== */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ==================================================
+   STATS
+================================================== */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.stat {
+    text-align: center;
+    padding: 30px 15px;
+
+    background: rgba(17,24,39,.75);
+
+    border: 1px solid rgba(255,255,255,.07);
+
+    border-radius: 16px;
+
+    transition: .3s;
+}
+
+.stat:hover {
+    transform: translateY(-7px);
+    border-color: #00bfff;
+}
+
+.stat-number {
+    font-size: 38px;
+    font-weight: bold;
+    color: #00bfff;
+}
+
+.stat p {
+    color: #94a3b8;
+}
+
+
+/* ==================================================
+   SERVICES
+================================================== */
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    padding: 35px;
+    text-align: center;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(17,24,39,.96),
+            rgba(10,15,30,.96)
+        );
+
+    border: 1px solid rgba(255,255,255,.07);
+
+    transition: .4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(0,191,255,.5);
+
+    box-shadow:
+        0 20px 45px rgba(0,191,255,.13);
+}
+
+.card-icon {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #00bfff;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #cbd5e1;
+    font-size: 15px;
+}
+
+
+/* ==================================================
+   WHY US
+================================================== */
+
+.why-us {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.why-card {
+    text-align: center;
+    padding: 30px 20px;
+
+    background: #111827;
+
+    border: 1px solid rgba(255,255,255,.07);
+
+    border-radius: 16px;
+
+    transition: .4s;
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+    border-color: #00bfff;
+}
+
+.why-icon {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.why-card h3 {
+    color: #00bfff;
+    margin-bottom: 10px;
+}
+
+.why-card p {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+
+/* ==================================================
+   PORTFOLIO
+================================================== */
+
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project {
+    min-height: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #111827,
+            #0b1222
+        );
+
+    border: 1px solid rgba(255,255,255,.07);
+
+    transition: .4s;
+}
+
+.project:hover {
+    transform: translateY(-10px) scale(1.02);
+
+    border-color: #00bfff;
+
+    box-shadow:
+        0 20px 45px rgba(0,191,255,.18);
+}
+
+.project-icon {
+    font-size: 45px;
+    margin-bottom: 12px;
+}
+
+.project h3 {
+    color: #00bfff;
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #94a3b8;
+}
+
+
+/* ==================================================
+   PRICING
+================================================== */
+
+.pricing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.price-card {
+    position: relative;
+
+    padding: 40px 30px;
+
+    text-align: center;
+
+    border-radius: 18px;
+
+    background: #111827;
+
+    border: 1px solid rgba(255,255,255,.07);
+
+    transition: .4s;
+}
+
+.price-card:hover {
+    transform: translateY(-10px);
+    border-color: #00bfff;
+}
+
+.price-card.featured {
+    border: 2px solid #00bfff;
+    transform: scale(1.03);
+}
+
+.price-card.featured:hover {
+    transform: scale(1.04) translateY(-8px);
+}
+
+.popular {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: #00bfff;
+    color: #00111c;
+
+    padding: 5px 16px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.price-card h3 {
+    color: #00bfff;
+    font-size: 25px;
+}
+
+.price {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.price-card ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.price-card li {
+    color: #cbd5e1;
+    margin: 12px 0;
+}
+
+
+/* ==================================================
+   ABOUT
+================================================== */
+
+.about {
+    max-width: 850px;
+    margin: auto;
+
+    padding: 40px;
+
+    text-align: center;
+
+    color: #cbd5e1;
+
+    font-size: 18px;
+
+    border-radius: 18px;
+
+    background: rgba(17,24,39,.65);
+
+    border: 1px solid rgba(255,255,255,.07);
+}
+
+
+/* ==================================================
+   TESTIMONIALS
+================================================== */
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.testimonial {
+    padding: 30px;
+
+    background: #111827;
+
+    border-radius: 18px;
+
+    border: 1px solid rgba(255,255,255,.07);
+
+    transition: .3s;
+}
+
+.testimonial:hover {
+    transform: translateY(-8px);
+    border-color: #00bfff;
+}
+
+.stars {
+    color: #ffd700;
+    margin-bottom: 15px;
+}
+
+.testimonial p {
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+.client {
+    color: #00bfff;
+    font-weight: bold;
+}
+
+
+/* ==================================================
+   CONTACT
+================================================== */
+
+.contact-wrapper {
+    max-width: 850px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+
+    width: 100%;
+
+    padding: 16px;
+
+    margin-bottom: 16px;
+
+    background: #111827;
+
+    color: white;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 10px;
+
+    outline: none;
+
+    transition: .3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+    border-color: #00bfff;
+}
+
+.contact-form textarea {
+    height: 160px;
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+}
+
+.form-note {
+    text-align: center;
+    color: #64748b;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+.success-message {
+    display: none;
+
+    padding: 15px;
+
+    margin-top: 20px;
+
+    text-align: center;
+
+    border-radius: 10px;
+
+    color: #25D366;
+
+    background: rgba(37,211,102,.08);
+
+    border: 1px solid #25D366;
+}
+
+.success-message.show {
+    display: block;
+}
+
+.email-link {
+    display: block;
+
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #00bfff;
+
+    font-weight: bold;
+}
+
+
+/* ==================================================
+   FLOATING BUTTONS
+================================================== */
+
+.whatsapp {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #25D366;
+    color: white;
+
+    font-size: 27px;
+
+    z-index: 999;
+
+    box-shadow:
+        0 8px 25px rgba(37,211,102,.35);
+
+    transition: .3s;
+}
+
+.whatsapp:hover {
+    transform: scale(1.15);
+}
+
+.top {
+    position: fixed;
+
+    right: 25px;
+    bottom: 100px;
+
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #00bfff;
+    color: #00111c;
+
+    font-weight: bold;
+
+    z-index: 998;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer {
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background: #080c18;
+
+    color: #94a3b8;
+
+    border-top: 1px solid rgba(255,255,255,.06);
+}
+
+footer strong {
+    color: #00bfff;
+}
+
+.footer-email {
+    display: inline-block;
+    margin: 8px 0;
+    color: #00bfff;
+}
+
+
+/* ==================================================
+   ANIMATION
+================================================== */
+
+@keyframes heroAppear {
+
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 1050px) {
+
+    .services,
+    .portfolio,
+    .pricing,
+    .testimonials {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-us {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 720px) {
+
+    nav {
+        flex-wrap: wrap;
+        padding: 15px 5%;
+    }
+
+    nav ul {
+        display: none;
+
+        width: 100%;
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 20px 0;
+
+        gap: 20px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .services,
+    .portfolio,
+    .pricing,
+    .testimonials,
+    .why-us,
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .price-card.featured {
+        transform: none;
+    }
+
+    section {
+        padding: 75px 5%;
+    }
+
+    .hero {
+        min-height: 85vh;
+        padding: 80px 20px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .whatsapp {
+        right: 18px;
+        bottom: 18px;
+    }
+
+    .top {
+        right: 18px;
+        bottom: 90px;
+    }
+
+}
+
+
+/* ==================================================
+   REDUCED MOTION
+================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    * {
+        scroll-behavior: auto !important;
+        animation: none !important;
+        transition: none !important;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+     NAVIGATION
+================================================== -->
+
+<nav>
+
+    <div class="logo">
+        David <span>Web Studio</span>
+    </div>
+
+    <ul id="navLinks">
+
+        <li>
+            <a href="#home">Home</a>
+        </li>
+
+        <li>
+            <a href="#services">Services</a>
+        </li>
+
+        <li>
+            <a href="#portfolio">Portfolio</a>
+        </li>
+
+        <li>
+            <a href="#pricing">Pricing</a>
+        </li>
+
+        <li>
+            <a href="#about">About</a>
+        </li>
+
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+
+    </ul>
+
+
+    <div class="nav-actions">
+
+        <button
+            class="menu-button"
+            onclick="toggleMenu()"
+            aria-label="Open navigation menu">
+
+            ☰
+
+        </button>
+
+        <button
+            class="theme-button"
+            onclick="toggleTheme()"
+            id="themeButton"
+            aria-label="Toggle color theme">
+
+            ☀
+
+        </button>
+
+    </div>
+
+</nav>
+
+
+<!-- ==================================================
+     HERO
+================================================== -->
+
+<main>
+
+<section
+    class="hero"
+    id="home">
+
+    <div class="hero-content">
+
+        <div class="hero-badge">
+            🚀 Modern Websites • Professional Results
+        </div>
+
+        <h1>
+            Build Your
+            <span>Digital Future</span>
+        </h1>
+
+        <p>
+            David Web Studio creates beautiful,
+            modern and responsive websites that help
+            businesses, brands and individuals stand out online.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a
+                href="#contact"
+                class="button">
+
+                Get Your Website
+
+            </a>
+
+            <a
+                href="#portfolio"
+                class="button button-outline">
+
+                View Portfolio
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     STATS
+================================================== -->
+
+<section class="reveal">
+
+    <div class="stats">
+
+        <div class="stat">
+
+            <div
+                class="stat-number"
+                data-target="20">
+
+                0+
+
+            </div>
+
+            <p>Projects</p>
+
+        </div>
+
+
+        <div class="stat">
+
+            <div
+                class="stat-number"
+                data-target="15">
+
+                0+
+
+            </div>
+
+            <p>Happy Clients</p>
+
+        </div>
+
+
+        <div class="stat">
+
+            <div
+                class="stat-number"
+                data-target="3">
+
+                0+
+
+            </div>
+
+            <p>Years Learning</p>
+
+        </div>
+
+
+        <div class="stat">
+
+            <div
+                class="stat-number"
+                data-target="100">
+
+                0%
+
+            </div>
+
+            <p>Commitment</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     SERVICES
+================================================== -->
+
+<section
+    id="services"
+    class="reveal">
+
+    <h2 class="section-title">
+        Our <span>Services</span>
+    </h2>
+
+    <p class="section-subtitle">
+        Everything you need to build a strong
+        and professional online presence.
+    </p>
+
+
+    <div class="services">
+
+
+        <article class="card">
+
+            <div class="card-icon">💼</div>
+
+            <h3>
+                Business Websites
+            </h3>
+
+            <p>
+                Professional websites designed to help
+                businesses attract customers and grow online.
+            </p>
+
+        </article>
+
+
+        <article class="card">
+
+            <div class="card-icon">👤</div>
+
+            <h3>
+                Personal Websites
+            </h3>
+
+            <p>
+                Modern websites that showcase your
+                skills, achievements and personality.
+            </p>
+
+        </article>
+
+
+        <article class="card">
+
+            <div class="card-icon">🎯</div>
+
+            <h3>
+                Landing Pages
+            </h3>
+
+            <p>
+                Attractive landing pages designed
+                to promote products and services.
+            </p>
+
+        </article>
+
+
+        <article class="card">
+
+            <div class="card-icon">🔄</div>
+
+            <h3>
+                Website Redesign
+            </h3>
+
+            <p>
+                Transform an old website into a
+                cleaner and more modern experience.
+            </p>
+
+        </article>
+
+
+        <article class="card">
+
+            <div class="card-icon">📱</div>
+
+            <h3>
+                Responsive Design
+            </h3>
+
+            <p>
+                Websites that work beautifully across
+                phones, tablets and computers.
+            </p>
+
+        </article>
+
+
+        <article class="card">
+
+            <div class="card-icon">🛠️</div>
+
+            <h3>
+                Website Maintenance
+            </h3>
+
+            <p>
+                Updates, improvements and maintenance
+                for existing websites.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     WHY US
+================================================== -->
+
+<section class="reveal">
+
+    <h2 class="section-title">
+        Why <span>Choose Us?</span>
+    </h2>
+
+
+    <div class="why-us">
+
+
+        <article class="why-card">
+
+            <div class="why-icon">🚀</div>
+
+            <h3>Modern Design</h3>
+
+            <p>
+                Clean and professional designs
+                for today's web.
+            </p>
+
+        </article>
+
+
+        <article class="why-card">
+
+            <div class="why-icon">📱</div>
+
+            <h3>Mobile Friendly</h3>
+
+            <p>
+                Your website works across
+                different screen sizes.
+            </p>
+
+        </article>
+
+
+        <article class="why-card">
+
+            <div class="why-icon">⚡</div>
+
+            <h3>Fast Performance</h3>
+
+            <p>
+                Lightweight pages built with
+                performance in mind.
+            </p>
+
+        </article>
+
+
+        <article class="why-card">
+
+            <div class="why-icon">💬</div>
+
+            <h3>Direct Support</h3>
+
+            <p>
+                Contact David Web Studio
+                directly through WhatsApp.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     PORTFOLIO
+================================================== -->
+
+<section
+    id="portfolio"
+    class="reveal">
+
+    <h2 class="section-title">
+        My <span>Portfolio</span>
+    </h2>
+
+    <p class="section-subtitle">
+        Website projects and concepts from
+        David Web Studio.
+    </p>
+
+
+    <div class="portfolio">
+
+
+        <article class="project">
+
+            <div>
+
+                <div class="project-icon">
+                    💼
+                </div>
+
+                <h3>
+                    Business Website
+                </h3>
+
+                <p>
+                    Professional business website concept.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="project">
+
+            <div>
+
+                <div class="project-icon">
+                    📸
+                </div>
+
+                <h3>
+                    Photography Website
+                </h3>
+
+                <p>
+                    Photography portfolio concept.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="project">
+
+            <div>
+
+                <div class="project-icon">
+                    👨‍💻
+                </div>
+
+                <h3>
+                    Personal Portfolio
+                </h3>
+
+                <p>
+                    Modern personal portfolio concept.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="project">
+
+            <div>
+
+                <div class="project-icon">
+                    🛒
+                </div>
+
+                <h3>
+                    E-Commerce Website
+                </h3>
+
+                <p>
+                    Online store concept.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="project">
+
+            <div>
+
+                <div class="project-icon">
+                    🍽️
+                </div>
+
+                <h3>
+                    Restaurant Website
+                </h3>
+
+                <p>
+                    Restaurant website concept.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <article class="project">
+
+            <div>
+
+                <div class="project-icon">
+                    🎨
+                </div>
+
+                <h3>
+                    Creative Agency
+                </h3>
+
+                <p>
+                    Creative agency website concept.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     PRICING
+================================================== -->
+
+<section
+    id="pricing"
+    class="reveal">
+
+    <h2 class="section-title">
+        Website <span>Packages</span>
+    </h2>
+
+    <p class="section-subtitle">
+        Choose a package or request a custom quote.
+    </p>
+
+
+    <div class="pricing">
+
+
+        <article class="price-card">
+
+            <h3>Basic</h3>
+
+            <div class="price">
+                ₦50,000
+            </div>
+
+            <ul>
+                <li>✓ 1–3 Pages</li>
+                <li>✓ Mobile Friendly</li>
+                <li>✓ Contact Section</li>
+                <li>✓ Basic Design</li>
+            </ul>
+
+            <a
+                href="#contact"
+                class="button">
+
+                Choose Basic
+
+            </a>
+
+        </article>
+
+
+        <article
+            class="price-card featured">
+
+            <div class="popular">
+                MOST POPULAR
+            </div>
+
+            <h3>Standard</h3>
+
+            <div class="price">
+                ₦100,000
+            </div>
+
+            <ul>
+                <li>✓ Up to 5 Pages</li>
+                <li>✓ Responsive Design</li>
+                <li>✓ Contact Form</li>
+                <li>✓ Modern Design</li>
+                <li>✓ Basic Animations</li>
+            </ul>
+
+            <a
+                href="#contact"
+                class="button">
+
+                Choose Standard
+
+            </a>
+
+        </article>
+
+
+        <article class="price-card">
+
+            <h3>Premium</h3>
+
+            <div class="price">
+                ₦200,000+
+            </div>
+
+            <ul>
+                <li>✓ Multiple Pages</li>
+                <li>✓ Advanced Design</li>
+                <li>✓ Animations</li>
+                <li>✓ Custom Features</li>
+                <li>✓ Premium Support</li>
+            </ul>
+
+            <a
+                href="#contact"
+                class="button">
+
+                Choose Premium
+
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     ABOUT
+================================================== -->
+
+<section
+    id="about"
+    class="reveal">
+
+    <h2 class="section-title">
+        About <span>David Web Studio</span>
+    </h2>
+
+
+    <div class="about">
+
+        <p>
+            David Web Studio focuses on creating clean,
+            modern and responsive websites for businesses,
+            brands and individuals.
+        </p>
+
+        <br>
+
+        <p>
+            The goal is simple: help people build a strong
+            and professional presence on the internet.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     TESTIMONIALS
+================================================== -->
+
+<section class="reveal">
+
+    <h2 class="section-title">
+        Client <span>Feedback</span>
+    </h2>
+
+    <p class="section-subtitle">
+        Genuine client testimonials can be added here
+        after clients give permission for their feedback
+        to be published.
+    </p>
+
+
+    <div class="testimonials">
+
+
+        <article class="testimonial">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                Client testimonial will appear here
+                after receiving genuine client feedback.
+            </p>
+
+            <div class="client">
+                Client testimonial
+            </div>
+
+        </article>
+
+
+        <article class="testimonial">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                Client testimonial will appear here
+                after receiving genuine client feedback.
+            </p>
+
+            <div class="client">
+                Client testimonial
+            </div>
+
+        </article>
+
+
+        <article class="testimonial">
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                Client testimonial will appear here
+                after receiving genuine client feedback.
+            </p>
+
+            <div class="client">
+                Client testimonial
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ==================================================
+     CONTACT
+================================================== -->
+
+<section
+    id="contact"
+    class="reveal">
+
+    <h2 class="section-title">
+        Request a <span>Website</span>
+    </h2>
+
+    <p class="section-subtitle">
+        Tell David Web Studio what you need.
+    </p>
+
+
+    <div class="contact-wrapper">
+
+
+        <form
+            class="contact-form"
+            onsubmit="sendWhatsApp(); return false;">
+
+            <label for="name">
+                Your Name
+            </label>
+
+            <input
+                id="name"
+                type="text"
+                placeholder="Your Name"
+                maxlength="80"
+                required>
+
+
+            <label for="email">
+                Your Email
+            </label>
+
+            <input
+                id="email"
+                type="email"
+                placeholder="Your Email"
+                maxlength="120"
+                required>
+
+
+            <label for="business">
+                Business Name
+            </label>
+
+            <input
+                id="business"
+                type="text"
+                placeholder="Business Name"
+                maxlength="100">
+
+
+            <label for="websiteType">
+                Website Type
+            </label>
+
+            <select
+                id="websiteType"
+                required>
+
+                <option value="">
+                    Select Website Type
+                </option>
+
+                <option>
+                    Business Website
+                </option>
+
+                <option>
+                    Personal Website
+                </option>
+
+                <option>
+                    Photography Website
+                </option>
+
+                <option>
+                    Landing Page
+                </option>
+
+                <option>
+                    E-Commerce Website
+                </option>
+
+                <option>
+                    Blog Website
+                </option>
+
+                <option>
+                    Other
+                </option>
+
+            </select>
+
+
+            <label for="currency">
+                Currency
+            </label>
+
+            <select
+                id="currency"
+                required>
+
+                <option value="">
+                    Select Your Currency
+                </option>
+
+                <option>
+                    NGN - Nigerian Naira
+                </option>
+
+                <option>
+                    USD - US Dollar
+                </option>
+
+                <option>
+                    GBP - British Pound
+                </option>
+
+                <option>
+                    EUR - Euro
+                </option>
+
+                <option>
+                    CAD - Canadian Dollar
+                </option>
+
+                <option>
+                    AUD - Australian Dollar
+                </option>
+
+                <option>
+                    GHS - Ghanaian Cedi
+                </option>
+
+                <option>
+                    KES - Kenyan Shilling
+                </option>
+
+                <option>
+                    ZAR - South African Rand
+                </option>
+
+            </select>
+
+
+            <label for="budget">
+                Budget
+            </label>
+
+            <input
+                id="budget"
+                type="number"
+                placeholder="Enter your budget"
+                min="0"
+                max="999999999"
+                required>
+
+
+            <label for="message">
+                Project Details
+            </label>
+
+            <textarea
+                id="message"
+                placeholder="Tell me about the website you want..."
+                maxlength="2000"
+                required></textarea>
+
+
+            <button
+                type="submit"
+                class="button">
+
+                Send Website Request
+
+            </button>
+
+
+            <p class="form-note">
+                Your request will be prepared and
+                sent through WhatsApp.
+            </p>
+
+        </form>
+
+
+        <div
+            id="successMessage"
+            class="success-message">
+
+            ✅ Your request is ready.
+            WhatsApp is opening now.
+
+        </div>
+
+
+        <a
+            class="email-link"
+            href="mailto:davidolocheodangla@gmail.com">
+
+            📧 davidolocheodangla@gmail.com
+
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ==================================================
+     WHATSAPP
+================================================== -->
+
+<a
+    class="whatsapp"
+    href="https://wa.me/2347071694637"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contact David Web Studio on WhatsApp">
+
+    💬
+
+</a>
+
+
+<!-- ==================================================
+     BACK TO TOP
+================================================== -->
+
+<a
+    class="top"
+    href="#home"
+    aria-label="Back to top">
+
+    ↑
+
+</a>
+
+
+<!-- ==================================================
+     FOOTER
+================================================== -->
+
+<footer>
+
+    <p>
+        © 2026
+        <strong>David Web Studio</strong>.
+        All Rights Reserved.
+    </p>
+
+    <a
+        class="footer-email"
+        href="mailto:davidolocheodangla@gmail.com">
+
+        davidolocheodangla@gmail.com
+
+    </a>
+
+    <p>
+        Professional Websites • Modern Design • Reliable Service
+    </p>
+
+</footer>
+
+
+<script>
+
+/* ==================================================
+   MOBILE MENU
+================================================== */
+
+function toggleMenu() {
+
+    document
+        .getElementById("navLinks")
+        .classList
+        .toggle("active");
+
+}
+
+
+document
+    .querySelectorAll("#navLinks a")
+    .forEach(function(link) {
+
+        link.addEventListener("click", function() {
+
+            document
+                .getElementById("navLinks")
+                .classList
+                .remove("active");
+
+        });
+
+    });
+
+
+/* ==================================================
+   THEME
+================================================== */
+
+function toggleTheme() {
+
+    const body = document.body;
+
+    const button =
+        document.getElementById("themeButton");
+
+    body.classList.toggle("light");
+
+    const light =
+        body.classList.contains("light");
+
+    localStorage.setItem(
+        "theme",
+        light ? "light" : "dark"
+    );
+
+    button.textContent =
+        light ? "🌙" : "☀";
+
+}
+
+
+if (
+    localStorage.getItem("theme") === "light"
+) {
+
+    document.body.classList.add("light");
+
+    document
+        .getElementById("themeButton")
+        .textContent = "🌙";
+
+}
+
+
+/* ==================================================
+   SCROLL REVEAL
+================================================== */
+
+const revealElements =
+    document.querySelectorAll(".reveal");
+
+
+function revealOnScroll() {
+
+    revealElements.forEach(function(element) {
+
+        const top =
+            element
+                .getBoundingClientRect()
+                .top;
+
+        if (
+            top <
+            window.innerHeight - 100
+        ) {
+
+            element.classList.add("show");
+
+        }
+
+    });
+
+}
+
+
+window.addEventListener(
+    "scroll",
+    revealOnScroll
+);
+
+revealOnScroll();
+
+
+/* ==================================================
+   COUNTERS
+================================================== */
+
+let countersStarted = false;
+
+
+function startCounters() {
+
+    if (countersStarted) {
+        return;
+    }
+
+    const stats =
+        document.querySelector(".stats");
+
+    if (!stats) {
+        return;
+    }
+
+    const position =
+        stats
+            .getBoundingClientRect()
+            .top;
+
+    if (
+        position <
+        window.innerHeight - 100
+    ) {
+
+        countersStarted = true;
+
+        document
+            .querySelectorAll(".stat-number")
+            .forEach(function(counter) {
+
+                const target =
+                    Number(
+                        counter.getAttribute(
+                            "data-target"
+                        )
+                    );
+
+                let current = 0;
+
+                const timer =
+                    setInterval(function() {
+
+                        current += Math.ceil(
+                            target / 50
+                        );
+
+                        if (
+                            current >= target
+                        ) {
+
+                            current = target;
+
+                            clearInterval(timer);
+
+                        }
+
+                        counter.textContent =
+                            target === 100
+                                ? current + "%"
+                                : current + "+";
+
+                    }, 30);
+
+            });
+
+    }
+
+}
+
+
+window.addEventListener(
+    "scroll",
+    startCounters
+);
+
+startCounters();
+
+
+/* ==================================================
+   WHATSAPP REQUEST
+================================================== */
+
+function sendWhatsApp() {
+
+    const name =
+        document
+            .getElementById("name")
+            .value
+            .trim();
+
+    const email =
+        document
+            .getElementById("email")
+            .value
+            .trim();
+
+    const business =
+        document
+            .getElementById("business")
+            .value
+            .trim();
+
+    const websiteType =
+        document
+            .getElementById("websiteType")
+            .value;
+
+    const currency =
+        document
+            .getElementById("currency")
+            .value;
+
+    const budget =
+        document
+            .getElementById("budget")
+            .value;
+
+    const message =
+        document
+            .getElementById("message")
+            .value
+            .trim();
+
+
+    if (
+        !name ||
+        !email ||
+        !websiteType ||
+        !currency ||
+        !budget ||
+        !message
+    ) {
+
+        alert(
+            "Please complete all required fields."
+        );
+
+        return;
+
+    }
+
+
+    const text =
+        `Hello David Web Studio!
+
+Name: ${name}
+Email: ${email}
+Business: ${business}
+Website Type: ${websiteType}
+Currency: ${currency}
+Budget: ${budget}
+
+Project Details:
+${message}`;
+
+
+    const url =
+        "https://wa.me/2347071694637?text=" +
+        encodeURIComponent(text);
+
+
+    document
+        .getElementById("successMessage")
+        .classList
+        .add("show");
+
+
+    window.open(
+        url,
+        "_blank",
+        "noopener,noreferrer"
+    );
+
+}
+
+</script>
+
+</body>
+</html>
